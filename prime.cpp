@@ -52,6 +52,10 @@ int main(int argc, char *argv[])
  */
 bool is_prime(unsigned long long num)
 {
+    if (num == 2)
+    {
+        return true;
+    }
     if (num < 2 || num % 2 == 0)
     {
         return false;
